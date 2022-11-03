@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/home-page.png">
+    <title>Javascript Project</title>
+</head>
+<body>
+    <header>
+        <div class="navbar-relative">
+            <div class="navbar-wraper">
+                <a href="index.html"><i class="fa-brands fa-accusoft"></i></a>
+                <nav class="navbar" id="navbarlinks">
+                    <ul class="nav-ul">
+                        <li class="nav-li "><a class="nav-a" href="index.html">Main</a></li>
+                        <li class="nav-li"><a class="nav-a" href="rooms.html">Rooms</a></li>
+                        <li class="nav-li"><a class="nav-a active" href="hotels.html">Photos</a></li>
+                        <li class="nav-li"><a class="nav-a" href="service.html">Services</a></li>
+                    </ul>
+                </nav> 
+
+            </div>
+            
+        </div>
+
+    </header>
+
+    <section id="photo-section">
+        <div class="hotel-photos">
+            <div class="text2">
+                <h2 class="headline">Photos</h2>
+                <h3 class="black-title">See our latest photos from restaurant and hotel</h3> 
+            </div>
+            <button id="button" onclick="myFunction()">Show More</button>  
+        </div>
+        <div class="photo-wraper">
+            <img class="hotel-photo" src="images/mohamed-ajufaan-GFcWwwGNu_w-unsplash.png" alt="beach-img">
+            <img class="hotel-photo" src="images/manuel-moreno-DGa0LQ0yDPc-unsplash.png" alt="hotel-img">
+            <img class="hotel-photo" src="images/rhema-kallianpur-jbJ-_hw2yag-unsplash.png" alt="hotel-img">
+        </div>
+        <div >
+        <div class="photo-wraper" id="photos-div">
+            <img class="hotel-photo"  src="images/photos4.jpeg" alt="hotel-img">
+            <img class="hotel-photo"  src="images/photos5.jpg" alt="hotel-img">
+            <img class="hotel-photo"  src="images/photos6.jpeg" alt="hotel-img">
+        </div>
+
+    </section>
+
+    </div>
+
+    <footer>
+        <div class="footer-block-container">
+            <div>
+                <h4 class="footer-title">Contact Info</h4>
+                <h5 class="footer-text-h5"><a class="violet" href="mailto:mail@gmail.com"> <i class="contact-icon fa-regular fa-envelope"></i><span class="contact-span"> mail@gmail.com</span></a></h5>
+                <h5 class="footer-text-h5"><a  class="violet" href="callto:+03206827890"><i class=" contact-icon fa-solid fa-phone"></i> <span class="contact-span">+0 320 682 7890 </span></a></h5>
+                <h5 class="footer-text-h5"><a  class="violet" href="https://goo.gl/maps/t7MTJMwoZ2cYxGE2A" target="blank"> <i class=" contact-icon fa-solid fa-location-dot"></i><span class="contact-span">Main Str Chicago Ilinois</span> </a></h5>                              
+            </div>
+            <div class="copyright-div">
+            <p class="footer-p">Copyright ©2022 All rights reserved</p>
+            <div class="media-icon-container">
+                <div class="media-icon"><a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+                </div> 
+                <div class="media-icon"><a href="https://twitter.com/" target="blank"><i class="fa-brands fa-twitter"></i></a>
+                </div> 
+                <div class="media-icon"><a href="https://youtube.com/" target="blank"><i class="fa-brands fa-youtube"></i></a>
+                </div> 
+            </div>
+            </div>
+        </div>
+
+        
+    </footer>
+    <script>
+        let button = document.getElementById('button');
+        let photosDiv = document.getElementById('photos-div');
+        function myFunction() {
+            if (photosDiv.style.display == "none") {
+                photosDiv.style.display = "block";
+                button.innerHTML = "Show Less";
+            } else {
+                photosDiv.style.display = "none";
+                button.innerHTML = "Show More";
+            }
+        }
+    </script>
+</body>
+</html>

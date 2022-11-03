@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/home-page.png">
+    <title>Javascript Project</title>
+</head>
+<body>
+    <header>
+        <div class="navbar-relative">
+            <div class="navbar-wraper">
+                <a href="index.html"><i class="fa-brands fa-accusoft"></i></a>
+                <nav class="navbar" id="navbarlinks">
+                    <ul class="nav-ul">
+                        <li class="nav-li "><a class="nav-a" href="index.html">Main</a></li>
+                        <li class="nav-li"><a class="nav-a active" href="rooms.html">Rooms</a></li>
+                        <li class="nav-li"><a class="nav-a" href="hotels.html">Photos</a></li>
+                        <li class="nav-li"><a class="nav-a" href="service.html">Services</a></li>
+                    </ul>
+                </nav> 
+            </div>
+            
+        </div>
+
+    </header>
+    <div class="rooms-wraper">
+        <div class="room-div">
+            <div class="room-backgr type-1">
+            </div>
+            <div class="accordion-title">
+                 <h4 class="room-category">Knai Bang Chatt Suite</h4>
+            </div>
+            <p class="room-description">Our unique open plan suite encompasses the entire second floor of the Brown Villa. Accessed through a spiral staircase, the suite contains a large sleeping area, a separate lounge area with chic and comfortable seating, a large Jacuzzi style bathtub, and a private terrace with spectacular views of the ocean.
+            </p>
+            </div>
+            <div class="room-div">
+                <div class="room-backgr type-2">
+                </div>
+                <div class="accordion-title">
+                    <h4 class="room-category">GardenDouble</h4>
+                </div>
+                <p class="room-description">Our Garden Double Rooms are spacious and set in the lush tropical gardens of our seaside property. Our nine unique Garden View double rooms offer a quiet and peaceful space. All Garden view rooms feature unique amenities including a minibar, and some rooms offer a private terrace and outdoor seating.
+                </p>
+            </div>
+            <div class="room-div">
+                <div class="room-backgr type-3">
+                </div >
+                <div class="accordion-title">
+                    <h4 class="room-category">Twin Rooms</h4>
+                </div>
+                <p class="room-description">There are two twin rooms on the property, located on the first floor of our Villas. Each room features a cosy twin bed with access to a shared outdoor terrace looking onto the garden. Our two twin rooms pair well with our double rooms; ideal for larger parties or families
+                </p>
+            </div>
+            <div class="room-div">
+                <div class="room-backgr type-4">
+                </div>
+                <div class="accordion-title">
+                    <h4 class="room-category">Single Room</h4>
+                </div>
+                <p class="room-description">We have one single room, located on the first floor of the iconic Blue Villa. This cosy garden view room features a unique branching bathroom design.
+                </p>
+            </div>
+    </div>
+
+    <footer>
+        <div class="footer-block-container">
+            <div>
+                <h4 class="footer-title">Contact Info</h4>
+                <h5 class="footer-text-h5"><a class="violet" href="mailto:mail@gmail.com"> <i class="contact-icon fa-regular fa-envelope"></i><span class="contact-span"> mail@gmail.com</span></a></h5>
+                <h5 class="footer-text-h5"><a  class="violet" href="callto:+03206827890"><i class=" contact-icon fa-solid fa-phone"></i> <span class="contact-span">+0 320 682 7890 </span></a></h5>
+                <h5 class="footer-text-h5"><a  class="violet" href="https://goo.gl/maps/t7MTJMwoZ2cYxGE2A" target="blank"> <i class=" contact-icon fa-solid fa-location-dot"></i><span class="contact-span">Main Str Chicago Ilinois</span> </a></h5>                              
+            </div>
+            <div class="copyright-div">
+            <p class="footer-p">Copyright ©2022 All rights reserved</p>
+            <div class="media-icon-container">
+                <div class="media-icon"><a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+                </div> 
+                <div class="media-icon"><a href="https://twitter.com/" target="blank"><i class="fa-brands fa-twitter"></i></a>
+                </div> 
+                <div class="media-icon"><a href="https://youtube.com/" target="blank"><i class="fa-brands fa-youtube"></i></a>
+                </div> 
+            </div>
+            </div>
+        </div>
+
+        
+    </footer>
+    <script>
+        // accordion
+        let accordion = document.getElementsByClassName('room-div');
+
+        for (let i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function() {
+                this.classList.toggle('active-Accordion');
+            })
+        }
+    </script>
+</body>
+</html>

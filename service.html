@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/home-page.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Tech-Project</title>
+</head>
+<body>
+    <header>
+        <div class="navbar-relative">
+            <div class="navbar-wraper">
+                <a href="index.html"><i class="fa-brands fa-accusoft"></i></a>
+                <nav class="navbar" id="navbarlinks">
+                    <ul class="nav-ul">
+                        <li class="nav-li "><a class="nav-a" href="index.html">Main</a></li>
+                        <li class="nav-li"><a class="nav-a" href="rooms.html">Rooms</a></li>
+                        <li class="nav-li"><a class="nav-a" href="hotels.html">Photos</a></li>
+                        <li class="nav-li"><a class="nav-a active" href="service.html">Services</a></li>
+                    </ul>
+                </nav> 
+
+            </div>
+            
+        </div>
+
+    </header>
+
+    <h2 class = "black-title service-headline">Services our hotel offers:</h2>
+
+    <div class="service-divWraper" id="service-Wraper-div">
+        <div class="service-fade-wraper">
+            <div class="service-text-title-div" id="title-slidedown">
+                <h2 class="service-text-title">Design</h2>
+            </div>
+            <div id="div-slidedown">
+                <div class="service-container" >
+                    <div class="service-text">
+                        <p>Our company offers you the most fashionable, modern designs. You can see some examples on our page.</p>
+                        <p class="service-age">Age: 18-35</p>
+                        <p>Email: evasmith@gmail.com</p>
+                    </div>
+                    <div class="service-img imgN1"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="service-fade-wraper">
+            <div class="service-text-title-div" id="title-slidedown2">
+                <h2 class="service-text-title">Comfort</h2>
+            </div>
+            <div id="div-slidedown2">
+                <div class="service-container">
+                    <div class="service-text" id="serv-info1">
+                        <p>Our company offers you the most comfortable, siutable and exquisite houses. We can easily make you feel at home.</p>
+                        <p class="service-age">Age: 35-50</p>
+                        <p>Email: annjones@gmail.com</p>
+                    </div>
+                    <div class="service-img imgN2"></div>
+                </div> 
+            </div>
+
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="footer-block-container">
+            <div>
+                <h4 class="footer-title">Contact Info</h4>
+                <h5 class="footer-text-h5"><a class="violet" href="mailto:mail@gmail.com"> <i class="contact-icon fa-regular fa-envelope"></i><span class="contact-span"> mail@gmail.com</span></a></h5>
+                <h5 class="footer-text-h5"><a  class="violet" href="callto:+03206827890"><i class=" contact-icon fa-solid fa-phone"></i> <span class="contact-span">+0 320 682 7890 </span></a></h5>
+                <h5 class="footer-text-h5"><a  class="violet" href="https://goo.gl/maps/t7MTJMwoZ2cYxGE2A" target="blank"> <i class=" contact-icon fa-solid fa-location-dot"></i><span class="contact-span">Main Str Chicago Ilinois</span> </a></h5>                              
+            </div>
+            <div class="copyright-div">
+            <p class="footer-p">Copyright ©2022 All rights reserved</p>
+            <div class="media-icon-container">
+                <div class="media-icon"><a href="https://www.facebook.com/" target="blank"><i class="fa-brands fa-facebook-f"></i></a>
+                </div> 
+                <div class="media-icon"><a href="https://twitter.com/" target="blank"><i class="fa-brands fa-twitter"></i></a>
+                </div> 
+                <div class="media-icon"><a href="https://youtube.com/" target="blank"><i class="fa-brands fa-youtube"></i></a>
+                </div> 
+            </div>
+            </div>
+        </div>
+
+        
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $("#title-slidedown").click(function(){
+                $("#div-slidedown").fadeToggle("slow");
+            });
+            $("#title-slidedown").hover(function() {
+                $("#title-slidedown").toggleClass("service-heading-mouse")
+            })
+            $("#title-slidedown2").hover(function() {
+                $("#title-slidedown2").toggleClass("service-heading-mouse")
+            })
+            $("#title-slidedown2").click(function(){
+                $("#div-slidedown2").fadeToggle("slow")
+            });
+            $("#div-slidedown").mouseenter(function(){
+                $("#div-slidedown").css("color", "gray")
+            });
+            $("#div-slidedown").mouseleave(function(){
+                $("#div-slidedown").css("color", "black");
+            })
+            $("#div-slidedown2").mouseenter(function(){
+                $("#div-slidedown2").css("color", "gray")
+            });
+            $("#div-slidedown2").mouseleave(function(){
+                $("#div-slidedown2").css("color", "black");
+            })
+        });
+        
+    </script>
+
+</body>
+</html>
+        
